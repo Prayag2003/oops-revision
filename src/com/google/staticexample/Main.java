@@ -33,4 +33,14 @@ public class Main{
     static void greeting(){
         System.out.println("Greetings from greeting function.");
     }
+
+    static void StaticMethod(){
+        Main obj = new Main();
+        obj.nonStaticMethod();
+    }
+
+    void nonStaticMethod(){
+
+    }
+
 }

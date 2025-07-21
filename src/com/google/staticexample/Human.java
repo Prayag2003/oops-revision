@@ -12,6 +12,13 @@ public class Human {
     */
    static long population;
 
+   // Static method cannot refer to this or super keyword
+   // NOTE: We cannot use "this" keyword inside the static methods
+   static void message(){
+    System.out.println("hello world");
+    // System.out.println(this.age); ERROR 
+   }
+
    // to access static variables, always use the "Class Name" since it belongs to 
    // the entire class
    // It can be created even when any object is not created.
@@ -22,6 +29,7 @@ public class Human {
         this.salary = salary;
         this.married = married;
         Human.population += 1;
+        Human.message();
     }
 
     @Override
