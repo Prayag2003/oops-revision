@@ -16,5 +16,8 @@ public class InnerClass{
     public static void main(String[] args) {
         Test a = new Test("gpt");
         Test b = new Test("b");
+
+        System.out.println("a.name = " + a.name);
+        System.out.println("b.name = " + b.name);
     }
 }
