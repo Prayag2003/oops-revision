@@ -23,6 +23,8 @@ public class Human {
    // the entire class
    // It can be created even when any object is not created.
 
+   // NOTE: Static methods are resolved at compile time since they are not dependent on objects.
+
     public Human(int age, String name, int salary, boolean married){
         this.age = age;
         this.name = name;
