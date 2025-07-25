@@ -9,8 +9,12 @@ public class BoxWeight extends Box {
 
     public BoxWeight(double l, double w, double h, double weight) {
         // used to initialize parent class's variables
+        // NOTE: The superclass needs to be initialized before the subclass can safely
+        // use its
+        // fields or methods.
+        // Java enforces this to ensure proper object construction order.
         super(l, w, h); // NOTE: call the parent class constructor
-        this.weight = super.weight;
+        this.weight = weight;
 
         // can also use super.height to access to parent class's variables
         // same can be done via this.height
