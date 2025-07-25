@@ -25,5 +25,15 @@ public class Main {
         Box boxi = new BoxWeight(1, 2, 3, 4);
         // System.out.println(boxi.weight); // ERROR
         System.out.println(boxi.h);
+
+        // IMPORTANT:
+        // BoxWeight box2 = new Box(1, 2, 3);
+        System.err.println(
+                "Will throw error since the reference type Box2 should be able to access it's property, i.e, weight, and to access it, it must instantiate that variable too, but the Box class does'nt have access to that variable itself");
+
+        // IMPORTANT: Super Keyword is used to call the constructor of it's parent class
+        // and it's parent class can call the constructor of its own parent class and so
+        // on. But every class has it's super pointing to the "OBJECT" class.
+
     }
 }

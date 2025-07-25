@@ -20,6 +20,7 @@ public class Box {
 
     // rectangle
     Box(double len, double width, double height) {
+        super();
         this.l = len;
         this.w = width;
         this.h = height;
