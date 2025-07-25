@@ -4,11 +4,13 @@ public class Box {
     double l;
     double w;
     double h;
+    double weight;
 
     public Box() {
         this.l = -1;
         this.w = -1;
         this.h = -1;
+        this.weight = 1000;
     }
 
     // Cube
@@ -24,6 +26,7 @@ public class Box {
         this.l = len;
         this.w = width;
         this.h = height;
+        this.weight = 1000;
     }
 
     // copy constructor

@@ -35,5 +35,12 @@ public class Main {
         // and it's parent class can call the constructor of its own parent class and so
         // on. But every class has it's super pointing to the "OBJECT" class.
 
+        // NOTE: can also use super.height to access to parent class's variables (refer
+        // BoxWeight's Constructor)
+        // same can be done via this.height
+        // only thing where we should super is to access the parent's var since the
+        // parent as well as the child can have the same variable, lets say "weight"
+        System.out.println(bw1.weight);
+        System.out.println(bw2.weight);
     }
 }
