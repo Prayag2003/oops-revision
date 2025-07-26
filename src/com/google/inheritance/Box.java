@@ -7,6 +7,7 @@ public class Box {
     double weight;
 
     public Box() {
+        System.out.println("Box constructor called");
         this.l = -1;
         this.w = -1;
         this.h = -1;

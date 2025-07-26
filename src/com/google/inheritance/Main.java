@@ -42,5 +42,19 @@ public class Main {
         // parent as well as the child can have the same variable, lets say "weight"
         System.out.println(bw1.weight);
         System.out.println(bw2.weight);
+
+        // EXPERIMENTING: with multi-level inheritance
+        BoxPrice bp1 = new BoxPrice();
+        System.out.println("Weight from default constructor is " + bp1.price);
+
+        BoxPrice bp2 = new BoxPrice(bp1);
+        System.out.println("Weight from default constructor is " + bp2.price);
+        System.out.println("Weight from default constructor is " + bp2.weight);
+
+        BoxWeight bp3 = new BoxPrice();
+        // System.out.println(bp3.price); // error
+
+        Box bp4 = new BoxPrice();
+        // System.out.println(bp4.price);
     }
 }

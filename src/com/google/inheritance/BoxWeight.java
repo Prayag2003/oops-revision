@@ -4,6 +4,7 @@ public class BoxWeight extends Box {
     double weight;
 
     public BoxWeight() {
+        System.out.println("Boxweight constructor called");
         this.weight = -1;
     }
 
@@ -20,5 +21,10 @@ public class BoxWeight extends Box {
         // same can be done via this.height
         // only thing where we should super is to access the parent's var since the
         // parent as well as the child can have the same variable, lets say "weight"
+    }
+
+    BoxWeight(BoxWeight other) {
+        super(other);
+        this.w = other.w;
     }
 }
