@@ -36,5 +36,24 @@ public class Numbers {
         // the actual object type and not the reference type.
         Shapes c = new Circle();
         c.area();
+
+        // IMPORTANT: DOWNCASTING
+        Circle c2 = (Circle) c; // Downcasting from Shapes to Circle
+        c2.area();
+
+        // NOTE: Late and Early Binding
+        // Early Binding: Method calls are resolved at compile time (static binding),
+        // i.e, final methods, static methods, and private methods.
+        // These methods cannot be overridden, and their calls are resolved at
+        // compiletime.
+
+        // Late Binding/ Dynamic Method Dispatch : Method calls are resolved at runtime
+        // (dynamic binding).
+
+        // NOTE: OVERRIDING DEPENDS ON THE OBJECT and STATIC METHODS ARE NOT DEPENDENT
+        // ON THE OBJECT, THUS STATIC METHODS CANNOT BE OVERRIDDEN.
+
+        // STATIC: you can inherit but you cant override, you can run but you can't
+        // hide.
     }
 }
