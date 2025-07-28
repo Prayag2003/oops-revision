@@ -18,5 +18,7 @@ public class Main {
 
         // ====
         Parent.hello();
+
+        s.normal();
     }
 }

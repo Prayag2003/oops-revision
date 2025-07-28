@@ -29,4 +29,10 @@ public abstract class Parent {
     static void hello() {
         System.out.println("Hello");
     }
+
+    // TODO: 5
+    // Q. Can the abstract class have normal methods:
+    void normal() {
+        System.out.println("I am normal!");
+    }
 }

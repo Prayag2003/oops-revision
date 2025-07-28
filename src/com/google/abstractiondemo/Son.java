@@ -16,4 +16,9 @@ public class Son extends Parent {
     void partner() {
         System.out.println("I love pepper potts");
     }
+
+    @Override
+    void normal() {
+        System.out.println("Normal method overridden in the child class");
+    }
 }
