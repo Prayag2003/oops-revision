@@ -1,6 +1,6 @@
 package com.google.singleton;
 
-public class Main{
+public class Main {
     public static void main(String[] args) {
         // all objects point to the same instance
         Singleton obj1 = Singleton.getInstance();
