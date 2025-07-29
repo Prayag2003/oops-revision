@@ -11,4 +11,10 @@ public class Main {
     // IMPORTANT: Abstract class can provide the implementation of interface but not
     // vice versa
 
+    public static void main(String[] args) {
+        Engine c = new Car();
+        c.start();
+        c.stop();
+        c.accelerate();
+    }
 }
