@@ -17,8 +17,10 @@ public class Main {
         c.stop();
         c.accelerate();
 
+        // TODO: 1
         // this would use the same start engine method, so basically if you stop the
         // music, well the engine would stop 🤣
+        // Solution: Create seperate classes for this interface as well!
         Media m = new Car();
         m.start();
         m.stop();
