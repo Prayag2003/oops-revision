@@ -16,5 +16,11 @@ public class Main {
         c.start();
         c.stop();
         c.accelerate();
+
+        // this would use the same start engine method, so basically if you stop the
+        // music, well the engine would stop 🤣
+        Media m = new Car();
+        m.start();
+        m.stop();
     }
 }
