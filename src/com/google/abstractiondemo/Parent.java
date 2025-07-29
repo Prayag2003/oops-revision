@@ -1,10 +1,12 @@
 package com.google.abstractiondemo;
 
 public abstract class Parent {
+    // NOTE: If atleast one of the methods is abstract, the class has to be
+    // abstract.
 
     int age;
 
-    // TODO:1 can we create an abstract constructor?
+    // TODO: 1 can we create an abstract constructor?
     public Parent(int age) {
         this.age = age;
     }
