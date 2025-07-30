@@ -24,5 +24,13 @@ public class Main {
         Media m = new Car();
         m.start();
         m.stop();
+
+        NiceCar niceCar = new NiceCar();
+        niceCar.start();
+        niceCar.startMusic();
+        niceCar.stop();
+
+        niceCar.upgradeEngine();
+        niceCar.start();
     }
 }
