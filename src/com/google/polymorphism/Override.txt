@@ -1,0 +1,6 @@
+When we override a method from a parent class, the child class's method access modifier must be the same or better (more accessible) than the parent's method.
+For example, if the parent class method is `protected`, the child class method can be `protected` or `public`, but not `private`.
+
+If the parent class method is `public`, the child class method can only be `public`. If the parent class method is `private`, it cannot be overridden at all, as private methods are not visible to subclasses.
+
+If the parent class method is `default` (package-private), the child class method can be `default`, `protected`, or `public`.
