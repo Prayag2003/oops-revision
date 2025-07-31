@@ -45,8 +45,8 @@ int main()
     // new Dog(): object -> Heap
     // heap random memory dump
 
-    // parent => su su access kari sakye che (what variables/methods can be accessed )
-    // child => a batavse karyu access (which one to access)
+    // parent => (what variables/methods can be accessed )
+    // child  => (which one to access)
     Animal *parent = new Dog();
     parent->speak();
 
